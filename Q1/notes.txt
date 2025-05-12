@@ -1,0 +1,5 @@
+Write code for a simple user registration form for an event using Flask and Docker in DevOps 
+docker build -t q1 .
+
+Develop a simple web application using Flask that allows users to register for an event. 
+Containerize the application using Docker and run it in a Docker container 
