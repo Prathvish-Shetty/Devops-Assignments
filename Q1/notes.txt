@@ -1,5 +1,10 @@
-Write code for a simple user registration form for an event using Flask and Docker in DevOps 
-docker build -t q1 .
+$ git init
+$ git add .
+$ git commit -m "add Q1"
+$ git branch -M main
+$ git remote add origin https://github.com/Prathvish-Shetty/Devops-Assignments.git
+$ git push -u origin main
 
-Develop a simple web application using Flask that allows users to register for an event. 
-Containerize the application using Docker and run it in a Docker container 
+Q1 Write code for a simple user registration form for an event using Flask and Docker in DevOps 
+docker build -t q1 .
+docker run -d -p 5000:5000 q1
