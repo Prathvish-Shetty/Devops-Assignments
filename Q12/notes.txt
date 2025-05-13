@@ -1,0 +1,5 @@
+12. Write a simple program in JavaScript and perform testing using Selenium. 
+
+npm install selenium-webdriver
+npx http-server . 
+node test.js

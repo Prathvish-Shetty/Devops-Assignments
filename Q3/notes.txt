@@ -1,1 +1,2 @@
-Implement GitHub Actions CI/CD for a Python/Flask app.
+Q3 Implement GitHub Actions CI/CD for a Python/Flask app.
+Q4 Create a Flask application and push the code to GitHub.

@@ -1,0 +1,33 @@
+5. Jenkins installation and setup explore the environment for Continuous Integration and Continuous Deployment (CI/CD) in software development.  
+6 Develop an application to demonstrate continuous integration and development using Jenkins. 
+13. Create a basic CI Pipeline in Jenkins for an existing project.
+14.Generate automated Build Reports and logs from CI/CD pipeline.
+15.Implement a basic deployment pipeline using Jenkins with automated testing and 
+deployment stages.
+
+net start jenkins
+net stop jenkins
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone Repo') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Prathvish-Shetty/devops-a3.git'
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                bat '"C:\\Users\\Prathvish Shetty\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m pip install -r requirements.txt'
+            }
+        }
+
+        stage('Run Flask App (Test)') {
+            steps {
+                bat '"C:\\Users\\Prathvish Shetty\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" app.py'
+            }
+        }
+    }
+}

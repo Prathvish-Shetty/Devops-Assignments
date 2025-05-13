@@ -1,0 +1,10 @@
+9. Develop an application to demonstrate Integration of Kubernetes and Docker.
+
+minikube start
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+minikube service express-service
+minikube stop
+
+deployment.yaml - how to run
+service.yaml - how to access

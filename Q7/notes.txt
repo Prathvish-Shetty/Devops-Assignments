@@ -1,0 +1,7 @@
+7. Develop an application to demonstrate Docker commands for content management.
+
+$ docker build -t q7 .
+$ docker run -d --name cms -p 8080:80 q7
+docker stop container-id
+
+8. Develop a simple containerized application using Docker. 

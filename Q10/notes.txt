@@ -1,0 +1,13 @@
+10. Develop an application to automate the process of running containerized application 
+using Kubernetes 
+
+deployment.yaml: Tells Kubernetes how to run and manage your application's containers (number of copies, updates, rollbacks). It ensures your app stays running as desired.
+
+service.yaml: Provides a stable network address to access your running application containers. It makes your app reachable within and potentially outside the Kubernetes cluster, without needing to know individual container IPs.
+
+minikube start
+chmod +x deploy.sh
+./deploy.sh
+kubectl delete service auto-app-service
+kubectl delete deployment auto-app-deployment
+minikube stop

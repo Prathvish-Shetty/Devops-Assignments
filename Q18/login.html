@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+</head>
+<body>
+  <h2>Login</h2>
+  <form id="loginForm" onsubmit="return validateForm()">
+    <input type="text" id="username" placeholder="Username" /><br/><br/>
+    <input type="password" id="password" placeholder="Password" /><br/><br/>
+    <button type="submit">Login</button>
+  </form>
+  <p id="errorMsg" style="color: red;"></p>
+
+  <script>
+    function validateForm() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+      const errorMsg = document.getElementById("errorMsg");
+
+      if (!user) {
+        errorMsg.textContent = "Username is required";
+        return false;
+      }
+      if (!pass) {
+        errorMsg.textContent = "Password is required";
+        return false;
+      }
+      if (user !== "admin" || pass !== "1234") {
+        errorMsg.textContent = "Invalid credentials";
+        return false;
+      }
+      errorMsg.textContent = "Login successful!";
+      return false; // Prevent actual form submit
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+16. Create a multi-stage Dockerfile to optimize image size
