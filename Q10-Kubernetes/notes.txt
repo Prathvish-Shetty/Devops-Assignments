@@ -8,6 +8,9 @@ service.yaml: Provides a stable network address to access your running applicati
 minikube start
 chmod +x deploy.sh
 ./deploy.sh
+kubectl get pods
+kubectl get deployments
+kubectl get services
 kubectl delete service auto-app-service
 kubectl delete deployment auto-app-deployment
 minikube stop
